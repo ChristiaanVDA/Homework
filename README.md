@@ -178,68 +178,13 @@ gender_unique = gender_unique.drop(["Player"],axis=1)
 
 
 ```python
-# Gender Demographics: Get the gender counts of the unique players and the percentage of each compared to total unique  players
+# Gender Demographics: Get the gender counts of the unique players and the percentage of each compared to total unique players
 gender_counts = gender_unique["Gender"].value_counts()
 gender_counts_df = pd.DataFrame(gender_counts)
 gender_counts_df = gender_counts_df.rename(columns={"Gender":"Total Count"})
 gender_counts_df.index.names = ['Gender']
 gender_counts_df['Percentage of Players'] = gender_counts_df['Total Count']/total_players
-```
 
-
-
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Total Count</th>
-      <th>Percentage of Players</th>
-    </tr>
-    <tr>
-      <th>Gender</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Male</th>
-      <td>495</td>
-      <td>0.808824</td>
-    </tr>
-    <tr>
-      <th>Female</th>
-      <td>108</td>
-      <td>0.176471</td>
-    </tr>
-    <tr>
-      <th>Other / Non-Disclosed</th>
-      <td>9</td>
-      <td>0.014706</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
 # Gender Demographics: Rearrange the columns and format the percentage column as a percentage
 gender_counts_df['Percentage of Players'] = gender_counts_df['Percentage of Players'].map("{:.2%}".format)
 gender_counts_format = gender_counts_df[['Percentage of Players','Total Count']]
