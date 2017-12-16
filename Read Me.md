@@ -734,18 +734,16 @@ merge_table.head(3)
 
 ```python
 sns.lmplot(x="Number of Rides", y="Average Fare", data = merge_table, fit_reg=False, hue='City Type', \
-           legend=False, palette=dict(Urban = "lightcoral", Suburban = "lightskyblue", Rural = "gold"), \
-           scatter_kws={"s"=[Number of Drivers]})
+           legend=False, palette=dict(Urban = "lightcoral", Suburban = "lightskyblue", Rural = "gold"))
 sns.plt.xlim(0,40)
 sns.plt.ylim(15,45)
 ```
 
 
-      File "<ipython-input-408-ff97ff8d30c0>", line 1
-        sns.lmplot(x="Number of Rides", y="Average Fare", data = merge_table, fit_reg=False, hue='City Type',            legend=False, palette=dict(Urban = "lightcoral", Suburban = "lightskyblue", Rural = "gold"),            scatter_kws={"s"=[Number of Drivers]})
-                                                                                                                                                                                                                                                 ^
-    SyntaxError: invalid syntax
-    
+
+
+    (15, 45)
+
 
 
 
@@ -757,7 +755,7 @@ plt.legend(loc='upper right')
 
 
 
-    <matplotlib.legend.Legend at 0x1f78fc27940>
+    <matplotlib.legend.Legend at 0x1f790a74320>
 
 
 
@@ -768,6 +766,10 @@ sns.plt.show()
 
 
 ![png](output_21_0.png)
+
+
+
+![png](output_21_1.png)
 
 
 
