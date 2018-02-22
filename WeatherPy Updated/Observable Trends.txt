@@ -1,0 +1,18 @@
+Observable Trends - WeatherPy
+
+Christiaan Van den Akker
+
+1) Temperature increases as latitudes approach zero. This is more
+   pronounced in cities in the northern hemisphere, but this may owe
+   in part to seasonality - it is currently summer in the southern
+   hemisphere.
+
+2) Humidity is less affected by latitude, though there does seem to
+   be a concentration of humidity around 80% in cities around 55°
+   latitude.
+
+3) Cloudiness does not seem affected by latitude.
+
+4) Wind speed seems to have more extremes in the most northerly
+   and southerly cities - though the case for the southernmost
+   cities is weaker.
