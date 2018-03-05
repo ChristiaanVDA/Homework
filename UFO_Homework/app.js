@@ -26,4 +26,21 @@ function renderTable() {
     }
   }
 }
+function handleSearchButtonClick() {
+    // Format the user's search by removing leading and trailing whitespace
+    var filterDate = $dateInput.value.trim();
 
+        // Set filteredSightings to an array of all sighting whose "date" matches the filter
+        filteredSightings = sightingsData.filter(function(sighting) {
+            var sightingDate = sighting.date;
+        
+    // If true, add the address to the filteredAddresses, otherwise don't add it to filteredAddresses
+        return sightingDate = filterDate;
+  });
+  renderTable();
+}
+
+// Render the table for the first time on page load
+renderTable();
+
+  
