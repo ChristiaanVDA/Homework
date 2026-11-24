@@ -15,7 +15,7 @@ import seaborn as sns
 
 ```python
 # Save config information for data
-api_key = "cc52e602067835f1da199f1fa74772ef"
+api_key = ""
 url = "http://api.openweathermap.org/data/2.5/weather?"
 forecast_url = "http://api.openweathermap.org/data/2.5/forecast?"
 units = "metric"
